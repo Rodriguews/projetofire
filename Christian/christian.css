@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    display:flex;
+    justify-content: center;
+    background: linear-gradient(180deg, rgb(20, 1, 48) 100%, rgb(19, 0, 51) 70%);
+}
+
+.content{
+    width: 100vw;
+    height: 100vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+    color: white;
+    font-family: poppins;
+    position: relative;
+}
+
+.texto{
+    background:rgb(13, 0, 32);
+    padding: 50px;
+    border-radius: 10px;
+    transition: .1s ease-in;
+    width: 40vw;
+}
+
+.texto:hover{
+    padding: 60px;
+}
+
+h2{
+    font-size: 20px;
+}
+
+.saida img{
+    height: 40px;
+}
+
+.saida{
+    position: absolute;
+    top:2rem;
+    left: 2rem;
+    height: 10px;
+}
+
+.emoji img{
+    position: absolute;
+    right: 500px;
+    top: 20px;
+    height: 30vh;
+    filter: drop-shadow(2px 2px 20px #fc5c0060) ;
+    animation: float 2s ease-in-out infinite;
+}
+
+@keyframes float{
+    0%, 100%{
+        transform: translateY(0px);
+    }
+    50%{
+        transform: translateY(10px);
+    }
+}
+
+.emoji1 img{
+    position: absolute;
+    right:35px;
+    bottom: 40px;
+    height: 35vh;
+    filter: drop-shadow(2px 2px 20px hsla(207, 100%, 52%, 0.644)) ;
+    animation: float 2s ease-in-out infinite;
+}
